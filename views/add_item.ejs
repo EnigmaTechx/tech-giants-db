@@ -1,0 +1,42 @@
+<%- include('./partials/header.ejs') %>
+<body>
+  <%- include('./partials/navbar.ejs') %>
+  <main>
+    <section class="sec-main" id="sec-main2">
+      <h1>ADD ITEM</h1>
+    </section>
+    <section>
+      <div class="form-container">
+        <div class="form-content">
+          <div class="user-info">
+            <h2>Select a table to insert into</h2>
+            <form method="post" id="add_form">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="fname"
+                      id="fname"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col">
+                  <button class="btn btn-primary btn-lg" type="submit">
+                    Add
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('./partials/footer.ejs') %>
+</body>
